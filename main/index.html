@@ -1,0 +1,282 @@
+<?php 
+
+include 'connection.php';
+
+?>
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Movie</title>
+	<meta charset="utf-8">
+	<meta name="author" content="group 1">
+	<meta name="description" content="online movie system">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- viewport- any device-->
+	
+	<link rel="stylesheet"  href="style.css" type="text/css"/>
+	<link rel="stylesheet" type="text/css" href="home_slider/homeslider.css">
+	<link rel="stylesheet" href="footer.css">
+
+	<!-- 	link the footer social media icons-->
+	<link rel="stylesheet" href="css/footer-distributed-with-address-and-phones.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+	<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+
+	<link rel="icon" type="image/png" href="images/icon.png" sizes="32x32" />
+</head>
+<style>
+#upload{
+	background : white;
+	color : red;
+	padding: 10px;
+	bottom: 650px;
+	right:5%;
+	border-radius: 5px;
+	font-size: 28px;
+	font-family: 'Futura';
+	color: #fff;
+	text-shadow: 0 0 5px  #de9018 , 0 0 10px  #de9018 , 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 0 0 55px #ff0080, 0 0 75px #ff0080;
+	text-align: center;
+}
+.adver{
+	padding: 40px 20px;
+	height: 105px;
+}
+
+
+#Subtitles{
+	background : white;
+	color : red;
+	padding: 10px;
+	bottom: 575px;
+	border-radius: 5px;
+	font-size: 28px;
+	font-family: 'Futura';
+	color: #fff;
+	left:2.3%;
+	text-shadow: 0 0 5px red, 0 0 10px red, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 0 0 55px #ff0080, 0 0 75px #ff0080;
+	text-align: center;
+}
+
+.footer-distributed{
+	background-color: #292c2f;
+	background: rgba(0, 0, 0, 0.75);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+
+	padding: 55px 50px;
+	margin-top: 100px;
+
+}
+
+</style>
+
+<body>
+	<div id="header">
+		<a href="#">
+			<img src="images/logo.png" alt="logo" /></a>
+			<h1> <center> </center> </h1>
+			<ul>
+				<li><a href="index.php">Home</a></li>
+				<li class="dropdown">
+					<a href="categories/main/cat.html" class="dropbtn">Categories</a>
+					<div class="dropdown-content">
+						<a href="navi_cat/Action.html">Action</a>
+						<a href="navi_cat/Animation.html">Animation</a>
+						<a href="navi_cat/Biography.html">Biography</a>
+						<a href="navi_cat/Cartoon.html">Cartoon</a>
+						<a href="navi_cat/Comedy.html">Comedy</a>
+						<a href="navi_cat/Crime.html">Crime</a>
+						<a href="navi_cat/Documentary.html">Documentary</a>
+						<a href="navi_cat/Drama.html">Drama</a>
+						<a href="navi_cat/Fantasy.html">Fantasy</a>
+						<a href="navi_cat/Horror.html">Horror</a>
+						<a href="navi_cat/Romance.html">Romance</a>
+						
+					</div>
+				</li>
+				<li><a href="navi_tra/Trailer.html">Trailer</a></li>
+				<li><a href="navi_top/Top_Rating.html">Top Rating</a></li>
+				<li><a href="navi_re/Reviews.html">Reviews</a></li>
+				<li><a href="navi_ab/About_us.html">About us</a></li>
+				<li><a href="../users/login_index.php">Log in</a></li>
+				
+				
+				<div>	
+				<!--search form-->					
+					<form class="search-form" action="phpsearch/search.php" method="POST">
+						<input type="text" name="search" placeholder="Search">
+						<button type="submit" name="submit-search">Search</button>
+					</form>
+					
+				</div>
+				
+			</ul>
+			
+		</div>
+		
+
+		<!--Home slider-->			
+		<section class="slideshow">
+			<div class="content">
+				<div class="content-carrousel">
+					<figure class="shadow"> <a href="onemovieview/avengers.html"><img src="home_slider\slider1.jpg" width="100%" height="180px"></a></figure>
+
+					<figure class="shadow"> <a href="onemovieview/rampage.html"><img src="home_slider\slider2.jpg" width="100%" height="180px"></a></figure>
+
+					<figure class="shadow"> <a href="onemovieview/life.html"><img src="home_slider\slider3.jpg" width="100%" height="180px"></a></figure>
+
+					<figure class="shadow"><a href="onemovieview/black.html"> <img src="home_slider\slider4.jpg" width="100%" height="180px"></a></figure>
+
+					<figure class="shadow"><a href="onemovieview/jurassic.html"> <img src="home_slider\slider5.jpg" width="100%" height="180px"></a></figure>
+
+					<figure class="shadow"> <a href="onemovieview/pacific.html"><img src="home_slider\slider6.jpg" width="100%" height="180px"></a></figure>
+
+					<figure class="shadow"> <a href="onemovieview/deadpool.html"><img src="home_slider\slider7.jpg" width="100%" height="180px"></a></figure>
+
+					<figure class="shadow"><a href="onemovieview/fifty.html"> <img src="home_slider\slider8.jpg" width="100%" height="180px"></a></figure>
+
+					<figure class="shadow"> <a href="onemovieview/antman.html"><img src="home_slider\slider9.jpg" width="100%" height="180px"></a></figure>
+					<div class="populardown"
+					<h2>Popular Downloads</h2>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+<!-- 	browse the movieupload file-->	
+<a href="../movieupload/up.php"><button id="upload">Upload</button></a>
+
+<!-- 	browse the subtitle page-->	
+<a href="../Editor/sub/sub.html"><button id="Subtitles">Subtitles</button></a>
+
+	<!--add images from database-->
+	<div class="container">
+		<?php
+		$sql = "SELECT * FROM films";
+		$result = mysqli_query($conn, $sql);
+		$queryResults = mysqli_num_rows($result);
+
+		if($queryResults > 0)
+		{
+			while ($row = mysqli_fetch_assoc($result)) 
+			{
+				?>
+				<div class = "filmclass">
+					<img src="<?php echo $row['movie_pic']?>">
+					<div class = "filmtitle">
+						<?php echo $row['movie_title']?>
+					</div>	
+				</div>
+				<?php
+			}
+		}
+		?>
+
+	</div>
+
+	<div class ="adver"></div>
+
+	<img src="images/batman.gif" height="350px">
+
+					<!-- <div class="pics" style="margin:20px; height=90px; width=355px">
+				
+						<img class="pics1" src="images/ju.jpeg" style="width:250px; height: 200px;">
+						<img class="pics1" src="images/slider5.jpg" style="width:250px; height: 200px;">
+						<img class="pics1" src="images/ad1.jpg" style="width:250px; height: 200px;">
+						<img class="pics1" src="images/ro3.png" style="width:250px; height: 200px;">
+						<img class="pics1" src="images/ho11.jpg" style="width:250px; height: 200px;"> 
+						<img class="pics1" src="images/ad6.png" style="width:250px; height: 200px;">
+						<img class="pics1" src="images/co6.jpg" style="width:250px; height: 200px;">
+						
+				 <script>
+				 
+						var slide = 0;
+						slideshow();
+            
+						function slideshow() {
+							var a;
+							var y = document.getElementsByClassName("pics1");
+							for (a = 0; a < y.length; a++) {
+						y[a].style.display = "none";  
+						}
+						slide++;
+						if (slide > y.length) {slide = 1}    
+						y[slide-1].style.display = "block";  
+						setTimeout(slideshow, 2000); 
+						}
+        
+				</script>
+
+						
+                </div> -->
+
+	<!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>-->
+
+	<!-- The footer-->		
+	<footer class="footer-distributed">
+
+		<div class="footer-left">
+
+			<h3>Popcorn<span>Theater</span></h3>
+
+			<p class="footer-links">
+				<a href="#">Home | </a>
+				
+				<a href="navi_ab/About_us.html">About us | </a>
+				
+				<a href="#">Contact</a>
+			</p>
+
+			<p class="footer-company-name">Popcorn Theater &copy; 2018</p>
+		</div>
+
+		<div class="footer-center">
+
+			<div >
+				<!-- Google map -->
+				<i class="fa fa-map-marker"></i>
+				<p><span><a href="https://www.google.com/maps/dir/6.8402658,79.9714905/Sri+Lanka+Institute+of+Information+Technology+New+Kandy+Road/@6.8812115,79.9341861,13z/data=!3m1!4b1!4m15!1m6!3m5!1s0x3ae256db1a6771c5:0x2c63e344ab9a7536!2sSri+Lanka+Institute+of+Information+Technology!8m2!3d6.9148346!4d79.973141!4m7!1m0!1m5!1m1!1s0x3ae256db1a6771c5:0x2c63e344ab9a7536!2m2!1d79.973141!2d6.9148346">SLIIT,</span>New Kandy Road, Malabe</a></p>
+			</div>
+
+			<div>
+				<i class="fa fa-phone"></i>
+				<p>+94719742474</p>
+			</div>
+
+			<div>
+				<i class="fa fa-envelope"></i>
+				<p><a href="https://mail.google.com/mail/u/0/#inbox?compose=new">popcorntheater@gmail.com</a></p>
+			</div>
+
+		</div>
+
+		<div class="footer-right">
+
+			<p class="footer-company-about">
+				<span>About the company</span>
+			We love movies! Popcorn Theater was created for people like us who want to watch "Great Movies. Free." .</p>
+
+			<div class="footer-icons">
+
+				<a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+				<a href="https://twitter.com"><i class="fa fa-twitter"></i></a>
+				<a href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a>
+				<a href="https://github.com"><i class="fa fa-github"></i></a>
+
+			</div>
+
+		</div>
+		
+		<a href="#" class="back-to-top" style="display: inline;"><i class="fa fa-arrow-circle-up"></i></a>
+
+	</footer>
+
+	
+</body>
+</html>

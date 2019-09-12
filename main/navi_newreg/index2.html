@@ -1,0 +1,114 @@
+<html>
+<head>
+	<title>New sign up</title>
+	<link href="sign_up.css" rel="stylesheet" type="text/css" >
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- viewport- any device-->
+
+</head>
+<body>
+
+	<div id = "register">
+		<form name="myForm" onsubmit="return validateForm()" method="post">
+			
+			<h2>Register Here</h2>
+			<div>
+				<lable>First Name :</lable><br>
+				<input type="text" name="fname" class="textInput" placeholder="Enter your First Name">
+				<div id="name_error" class="val_error"></div>
+			</div>
+
+			<div>
+				<lable>Last Name : </lable><br>
+				<input type="text" name="lastname" class="textInput" placeholder="Enter your Last Name" required>
+				<!-- <div id="name_error" class="val_error"></div> -->
+			</div>
+
+			<div>
+				<lable>Gender:</lable><br>
+				<input type= "radio" name="gender" value="" ><span>Male</span>
+				<input type= "radio" name="gender" value=""><span>Female</span><br><br>
+			</div>
+
+			<div>
+				<lable>Select one option:</lable><br>
+				<input type= "radio" name="option" value="" ><span>Advertiser</span><br><br>
+				<input type= "radio" name="option" value=""><span>Member</span><br><br>
+				<input type= "radio" name="option" value=""><span>Editer</span><br><br>
+			</div>
+
+			<div>
+				<lable>Email :</lable><br>
+				<input type="email" name="email" class="textInput" placeholder="Enter your Email"><br><br>
+				<div id="email_error" class="val_error"></div>
+
+			</div>
+
+			<div>
+				<lable>Enter Password :</lable><br>
+				<input type = "password" name="password" class="textInput" placeholder="Enter your password" ><br><br>
+			</div>
+
+			<div>
+				<lable>Re Enter Password :</lable><br>
+				<input type = "password" name="password_confirmation" class="textInput" placeholder="Enter your password" ><br><br>
+				<div id="password_error" class="val_error"></div>
+
+			</div>
+
+			<div>
+				<input type="submit"  value="Register" class="btn" name="register">
+			</div>
+		</form>
+
+
+	</div>	
+
+	<script>
+
+		
+
+		function validateForm() {
+			
+			alert("Validation start");
+			console.log("Validation start");
+
+			// Name validation 
+			var nameValue = document.forms["myForm"]["fname"].value;
+			if (nameValue == "") {
+				alert("Name must be filled out");
+				return false;
+			}		    
+
+
+		    // Email validation 
+		    var emailValue = document.forms["myForm"]["email"].value;
+		    if (emailValue == "") {
+		    	alert("Email must be filled out");
+		    	return false;
+		    }
+
+
+			// password validation 
+			var passwordValue = document.forms["myForm"]["password"].value;
+			if (passwordValue == "") {
+				alert("Password must be filled out");
+				return false;
+			}	    
+
+			  // check if the two passwords match
+			  var password_confirmationValue = document.forms["myForm"]["password_confirmation"].value;
+			  if (passwordValue != password_confirmationValue) {
+			  	alert("The two passwords do not match");
+			  	return false;
+
+			  };
+			}
+
+
+		</script>
+
+		
+	</body>
+	</html>	
+
+

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	<title>Movie</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Prasad">
+	<meta name="description" content="online movie system">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- viewport- any device-->
+	
+	<style>
+	body{
+		margin:0;
+		background-color:#cccc99;
+		}
+	
+	.header img {
+				float: left;
+				width: 120px;
+				height: 150px;
+				
+				.header h1 {
+							left: 10px;
+							background-color: blue;
+							color: yellow;
+							padding: 35px; 
+							}
+				}
+
+	
+	.navi{
+			border: 1px
+			width:1000px;
+			height:80px;
+			background-color:#660000;
+			overflow:auto;
+		}
+	ul	{
+		padding:0;
+		margin:0;
+		list-style:none;
+		}
+	li	{
+		float:left;
+		}
+	a:link{
+			width:130px;
+			display:block;
+			padding:15px;
+			color:white;
+			text-decoration:none;
+			font-family:Verdana;
+			font-size:20px;
+			text-align:center;
+			text-transform:uppercase;
+			}
+			
+	.searchbox {
+				float: right;
+				}
+
+	.searchbox input[type=text] {
+								padding: 6px;
+								margin-top: 8px;
+								font-size: 17px;
+								border: none;
+								}
+
+	.searchbox button {
+						float: right;
+						padding: 6px 10px;
+						margin-top: 8px;
+						margin-right: 16px;
+						background: #ddd;
+						font-size: 17px;
+						border: none;
+						cursor: pointer;
+						}
+
+	.searchbox button:hover {
+							background: #ccc;
+							}
+
+		@media screen and (max-width: 600px) {
+		
+							.searchbox {
+										float: none;
+										}
+							.searchbox button {
+											float: none;
+											display: block;
+											text-align: left;
+											width: 100%;
+											margin: 0;
+											padding: 14px;
+												}
+											
+												}
+		
+						
+	.footer {
+			position: fixed;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			background-color: red;
+			color: white;
+			text-align: center;
+			}
+	
+	</style>
+	</head>
+
+	<body>
+		<div class="header">
+		<img src="../images/logo.jpg" alt="logo" />
+		
+		<h1> <center>Online Movie System </center> </h1>
+		</div>
+		
+		<div class="navi">
+			<ul>
+				<li><a href="#"> Home</a></li>
+				<li><a href="#"> Categories</a></li>
+				<li><a href="#"> Trailer</a></li>
+				<li><a href="#"> Top rating</a></li>
+				<li><a href="#"> Reviews</a></li>
+				<li><a href="#"> About us</a></li>
+				<div class="searchbox">	
+						<form action="/action_page.php">
+							<input type="text" name="searchbox" class="search" placeholder="Search here">
+				
+							<button type="submit">
+							<i class="fa fa-search"></i>
+							</button>
+						</form>
+				</div>			
+			</ul>
+		</div>
+
+
+	
+	
+		<div class="footer">
+				<p>Plz edit footer</p>
+	</div>
+	
+		
+	</body>
+</html>

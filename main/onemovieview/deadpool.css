@@ -1,0 +1,162 @@
+*{margin:0px;padding: 0px;}
+body{
+	background-image: url("images/back.jpg");
+	font-family: Arial; 
+	color: white;
+	background-size:1600px;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+}
+
+
+#header img {
+	float: left;
+	width: 180px;
+	height: 145px;
+	margin:10;
+}			
+
+
+
+
+
+#header h1 {
+	height:90px;
+	width:1231px;
+	color: white;
+	padding: 35px; 
+	margin:0;
+	text-align: center;
+	font-family: Amsterdam;
+	font-weight: bold;
+}
+
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #A9A9A9;
+	background:rgba(0,0,0,0.5);	
+}
+
+
+li {
+	float: left;
+}
+
+
+li a, .dropbtn {
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+
+}
+
+
+li a:hover, .dropdown:hover .dropbtn {
+	background-color: red;
+}
+
+li.dropdown {
+	display: inline-block;
+}
+
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+
+.dropdown-content a:hover {	
+	background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+
+
+
+
+.search-form{
+	margin-top:3px;
+	float:right;
+	margin-right=:100px;
+}
+
+input[type=text]{
+	margin-top:3px;
+	padding:7px;
+	border:none;
+	font-size:16px;
+	font-family:sans-serif;
+}	
+
+button{
+	margin-top:3px;
+	float:right;
+	background:orange;
+	color:white;
+	border-radius:0 5px 5px 0;
+	cursor:pointer;
+	position:relative;
+	padding:7px;
+	font-family:sans-serif;
+	border:none;
+	font-size:16px;
+	
+	
+}					
+
+
+.ant img{
+	width:300px;
+	top: 65%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	box-sizing: border box;
+	padding: 70px 30px;
+	border-radius: 15%;
+}
+
+
+.btn {
+	background-color: DodgerBlue;
+	border: none;
+	color: white;
+	padding: 12px 30px;
+	cursor: pointer;
+	font-size: 20px;
+	top:90px;
+	right:50px;
+}
+
+.btn:hover {
+	background-color: red;
+}
+
+.info{
+	top: 100%;
+	left: 10%;
+	position: absolute;
+}
+

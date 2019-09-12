@@ -1,0 +1,77 @@
+*{
+	margin: 0;
+	padding: 10;
+	padding-right: 30;
+	
+}
+
+
+#payments{
+	width: 400px;
+	margin: 0px 0px 0px 430px;
+	color: white;
+	font-size:18px;
+	padding: 20px;
+	border-radius: 20px;
+	background: rgba(0, 0, 0, 0.5);	
+	outline: none;
+	border-bottom: 1px solid gray;
+	padding: 70px 50px;
+	font-style: Courier	;
+	font-weight:bold;
+	
+
+}
+
+
+
+body{
+	background-image:url("a.jpg");
+	background-size: 125%;
+	background-repeat:no-repeat;
+	font-size: 700;
+	font-style: sans-serif	;
+	font-weight:bold;
+	
+}
+
+
+
+h2{
+	text-align: center;
+	padding: 20px;
+}
+
+
+
+.textInput{
+	margin-top: 2px;
+	height: 25px;
+	border: 1px solid #5E6E66;
+	font-size: 15px;
+	padding: 1px;
+	width: 100%;
+}
+
+
+.btn{
+	width: 100%;
+	border: none;
+	outline: none;
+	height: 40px;
+	background: #fb2525;
+	color: #fff;
+	font-size: 18px;
+	border-radius: 20px;
+}
+.btn[type="submit"]:hover
+{
+	cursor: pointer;
+	background:#F94942  ;
+	color: #fff;
+}
+.val_error{
+	
+	color: #FF1F1F;
+}
+

@@ -1,0 +1,108 @@
+*{
+
+	margin: 0;
+	padding: 10;
+	padding-right: 30;
+}
+
+
+
+
+#Advertiser{
+	width: 500px;
+	margin: 0px 0px 0px 430px;
+	color: white;
+	font-size:18px;
+	padding: 20px;
+	border-radius: 20px;
+	background: rgba(0, 0, 0, 0.5);	
+	outline: none;
+	border-bottom: 1px solid gray;
+	padding: 70px 30px;
+	font-style: Courier	;
+	font-weight:bold;
+}
+
+
+
+body{
+	background-size: 100%;
+	background-repeat:no-repeat;
+	font-size: 700;
+	font-style: sans-serif	;
+	font-weight:bold;
+	
+}
+
+
+
+h2{
+	text-align: center;
+	padding: 20px;
+}
+
+
+
+
+#register{
+	margin-left:80px center;
+}
+
+
+
+#firstname{
+	
+	width:50%;
+	border: none;
+	border-radius: 3px;
+	outline: none;
+	padding: 7px;
+	border-bottom: 2px solid white;
+	color: black;
+	
+}
+
+#email {width:50%;
+	border: none;
+	border-radius: 3px;
+	outline: 0;
+	padding: 7px;
+	border-bottom: 2px solid white;
+	color:black;
+
+
+
+	form{
+		width: 50%;
+		margin: 100px auto;
+	}
+
+
+
+	form div{
+		margin: 3px auto;
+	}
+
+
+
+	.textInput{
+		margin-top: 2px;
+		height: 28px;
+		border: 1px solid #5E6E66;
+		font-size: 16px;
+		padding: 1px;
+		width: 100%;
+	}
+
+
+	.btn{
+		padding: 7px;
+		width: 100%;
+	}
+
+
+	.val_error{
+		color: #FF1F1F;
+	}
+
+	
